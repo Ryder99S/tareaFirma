@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:forms="clr-namespace:SignaturePad.Forms;assembly=SignaturePad.Forms"
+             x:Class="FirmaBase.MainPage"
+             xmlns:controls="clr-namespace:SignaturePad.Forms;assembly=SignaturePad.Forms">
+
+    <StackLayout>
+        <!--<forms:SignaturePadView
+            x:Name="Padview"
+            StrokeColor="Black"
+            Background="white"
+            StrokeWidth="3"
+            WidthRequest="280"
+            HeightRequest="360"/>-->
+
+        <controls:SignaturePadView x:Name = "Padview"
+                             StrokeColor      = "Black"
+                             StrokeWidth      = "2"
+                             CaptionText      = "Firme aqui"
+                             CaptionTextColor = "#FA58F4"
+                             CaptionFontSize  = "14"
+                             PromptFontSize   = "20"
+                             BackgroundColor  = "#CEE3F6"
+                             WidthRequest="280"
+                             HeightRequest="360"
+                           />
+
+        <Label x:Name="lbl" Text="lbl"></Label>
+
+        <Label Text="Nombre"></Label>
+        <Entry x:Name="txtnomb" Placeholder="Ingrese el Nombre"></Entry>
+
+        <Label Text="Descripcion"></Label>
+        <Entry x:Name="txtdescripcion" Placeholder="Ingrese una descripcion"></Entry>
+        
+        <Button x:Name="BtnSave" Text="Save" Clicked="BtnSave_Clicked" />
+        <Button x:Name="BtnLista" Text="Lista" Clicked="BtnLista_Clicked" />
+        
+    </StackLayout>
+
+</ContentPage>
